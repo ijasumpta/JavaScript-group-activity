@@ -1,4 +1,6 @@
-/*
+
+
+/*// Activity 1: Part 1
 1. A variable can help the program do this  By creating a variable name and assigning a value to it 
 So that whenever we need that value Later we use the variable name to access it
 
@@ -40,7 +42,7 @@ console.log("Is it raining? " + isRaining); //will output Is it raining? true
 let favoriteNumber;
 console.log(favoriteNumber); // undefined
 
-// Part 3
+//******* Part 3 ********
 let userName ="Amara"
 //console.log(username);
 // the code will not run because the variable name in the console is not declared
@@ -50,7 +52,7 @@ const favoriteColor = "blue";
 console.log(favoriteColor); // will output blue
 
 
-// Part 4
+// ******* Part 4 ********
 // Step 1 - The program needs to ask the user for their name and age then greet the user by their name and also calculate their year of birth based on the current year
 // Step 2 - Their Name and Age
 // Step 3 - it needs to store the user's Name and Age then calculate their year of birth by substracting the current year from the Age
