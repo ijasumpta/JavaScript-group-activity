@@ -1,6 +1,6 @@
-
-
-/*// Activity 1: Part 1
+//    Activity 1: Part 1
+ 
+/*
 1. A variable can help the program do this  By creating a variable name and assigning a value to it 
 So that whenever we need that value Later we use the variable name to access it
 
@@ -62,9 +62,10 @@ console.log(favoriteColor); // will output blue
 //Step 6
     const yourName = prompt("What is your name?");
     const yourAge = Number( prompt("How old are you?"));
+    const hobby = prompt("What is your favorite hobby");
     const currentYear = 2026;
     const birthYear =  currentYear -  yourAge 
-    console.log(`Welcome! ${yourName}, You were born in the year ${birthYear}`);
+    console.log(`Welcome! ${yourName}, You were born in the year ${birthYear}, Your favorite hobby is ${hobby} `);
 
 
 
@@ -72,11 +73,21 @@ console.log(favoriteColor); // will output blue
    {
     const Name = "Bola"
     const Age = 45;
+    const hobby = "Dancing";
     const currentYear = 2026;
     const birthYear = currentYear - Age;
-    console.log(`Welcome! ${Name}, You were born in the year ${birthYear}`);
+    console.log(`Welcome! ${Name}, You were born in the year ${birthYear}, Your favorite hobby is ${hobby}`);
 
    }
+
+   // Step 8 Yes the variable naming is clear and the code is easy to understand
+
+   /*
+     ****Part 5 **** Added user's favorite hobby
+     The hubby will be stored as a string data type because the value hobby is a text not a number
+   */
+
+   
 
 
 
