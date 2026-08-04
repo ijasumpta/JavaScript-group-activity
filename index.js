@@ -17,3 +17,22 @@
 
 //PART 5: EXTENSION CHALLENGE
 //We use prompt() to receive one more string input and store with a variable. Then concatenate it with the other information
+
+
+
+
+//Activity 2: Building Sentences with Code
+//Part 1: Group Discussion
+//1. There is no difference between the two. JS use s the + symbol to join strings together as well as add numbers together
+//2. I find the one with template literal easier to read because it is cleaner
+//3. JS will the two together which will result to 55
+//4. Regular quote is already used for string
+
+//PART B: PREDICT THE OUTPUT
+//Snippet A: console.log(a + b); //105         console.log(a - b); //5
+//Snippet B: Total cost: $60
+//Snippet C: console.log("Result: " + x + y); //Result: 6          console.log("Result: " + (x + y)); //Result: 6
+
+//PART 3: DEBUGGING CHALLENGE
+//1. You cannot do variable concatenation 
+//2. The itemPrice is supposed to be a number but its a string
