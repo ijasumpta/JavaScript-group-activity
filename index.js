@@ -36,3 +36,19 @@
 //PART 3: DEBUGGING CHALLENGE
 //1. You cannot do variable concatenation 
 //2. The itemPrice is supposed to be a number but its a string
+
+//PART 4: COLLABORATIVE TECHNICAL CHALLENGE
+const itemName = prompt("What item did you purchase? ");
+const itemPrice = prompt("What is the price? ");
+const itemQty = prompt("What is the quantity? ");
+
+const receiptQenerator = ( item, Qty) => {
+    return itemPrice * itemQty;
+};
+
+const result = receiptQenerator(itemPrice, itemQty);
+const roundedResult = Math.round(result);
+
+console.log("============= Receipt ===========");
+console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
+console.log(`Total: #${roundedResult}`)
