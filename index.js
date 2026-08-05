@@ -38,17 +38,41 @@
 //2. The itemPrice is supposed to be a number but its a string
 
 //PART 4: COLLABORATIVE TECHNICAL CHALLENGE
+// const itemName = prompt("What item did you purchase? ");
+// const itemPrice = prompt("What is the price? ");
+// const itemQty = prompt("What is the quantity? ");
+
+// const receiptQenerator = ( item, Qty) => {
+//     return itemPrice * itemQty;
+// };
+
+// const result = receiptQenerator(itemPrice, itemQty);
+// const roundedResult = Math.round(result);
+
+// console.log("============= Receipt ===========");
+// console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
+// console.log(`Total: #${roundedResult}`)
+
+
+//PART 5: EXTENSION CHALLENGE
 const itemName = prompt("What item did you purchase? ");
 const itemPrice = prompt("What is the price? ");
-const itemQty = prompt("What is the quantity? ");
+const itemQty = prompt("What is the quantity code ? ");
+const discount = prompt("Do you have a discount? ");
+const discountAmount = 10000;
 
 const receiptQenerator = ( item, Qty) => {
+    if(discount === 'yes'){
+        return (itemPrice * itemQty) - discountAmount;
+    }
     return itemPrice * itemQty;
-};
+};  
 
 const result = receiptQenerator(itemPrice, itemQty);
 const roundedResult = Math.round(result);
 
+
 console.log("============= Receipt ===========");
 console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
 console.log(`Total: #${roundedResult}`)
+
