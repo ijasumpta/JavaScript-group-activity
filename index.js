@@ -16,3 +16,6 @@ console.log("Birth Year:", birthYear);
 // Extension
 const favoriteHobby = prompt("What is your favorite hobby?");
 alert(`Hello ${userName}! Your favorite hobby is ${favoriteHobby}.`);
+
+
+
