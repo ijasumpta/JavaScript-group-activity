@@ -14,6 +14,16 @@
 //userName didn't end with a semicolon and favoriteColor started with a capital C
 
 //PART 4: The program first need to receive as input the name and age and store it in a variable. The the program will need to subtract the age from the current year to get the year the user is born. The program will need to return the year which then will be assigned to a variable which then will be concatenated (or use template literal) to add display the age and the birth year.
+const userName = prompt("What is your name: ");
+const age = Number(prompt("What is your age: "));
+
+function birthYear(age){
+    const currentYear = new Date().getFullYear();
+    return currentYear - age;
+}
+const yearOfBirth = birthYear(age);
+console.log(`Welcome ${userName}, your birth year is ${yearOfBirth}`)
+
 
 //PART 5: EXTENSION CHALLENGE
 //We use prompt() to receive one more string input and store with a variable. Then concatenate it with the other information
@@ -38,27 +48,27 @@
 //2. The itemPrice is supposed to be a number but its a string
 
 //PART 4: COLLABORATIVE TECHNICAL CHALLENGE
-// const itemName = prompt("What item did you purchase? ");
-// const itemPrice = prompt("What is the price? ");
-// const itemQty = prompt("What is the quantity? ");
+const itemName = prompt("What item did you purchase? ");
+const itemPrice = Number(prompt("What is the price? "));
+const itemQty = Number(prompt("What is the quantity? "));
 
-// const receiptQenerator = ( item, Qty) => {
-//     return itemPrice * itemQty;
-// };
+const receiptQenerator = ( item, Qty) => {
+    return itemPrice * itemQty;
+};
 
-// const result = receiptQenerator(itemPrice, itemQty);
-// const roundedResult = Math.round(result);
+const result = receiptQenerator(itemPrice, itemQty);
+const roundedResult = Math.round(result);
 
-// console.log("============= Receipt ===========");
-// console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
-// console.log(`Total: #${roundedResult}`)
+console.log("============= Receipt ===========");
+console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
+console.log(`Total: #${roundedResult}`)
 
 
 //PART 5: EXTENSION CHALLENGE
 const itemName = prompt("What item did you purchase? ");
-const itemPrice = prompt("What is the price? ");
-const itemQty = prompt("What is the quantity code ? ");
-const discount = prompt("Do you have a discount? ");
+const itemPrice = Number(prompt("What is the price? "));
+const itemQty = Number(prompt("What is the quantity ? "));
+const discount = prompt("Do you have a discount code? ");
 const discountAmount = 10000;
 
 const receiptQenerator = ( item, Qty) => {
@@ -76,3 +86,61 @@ console.log("============= Receipt ===========");
 console.log(`Item name: ${itemName} \nItem price: ${itemPrice} \nItem Quantity: ${itemQty}`);
 console.log(`Total: #${roundedResult}`)
 
+
+
+
+
+//ACTIVITY 3: THE TYPE DETECTIVE AGENCY
+//PART 1: GROUP DISCUSSION
+//1. Prompt returning a string could cause a bug because if a program expect a number bug got a string, it may not be able to properly perfom mathematical operation on it accurately. This can be fixed by converting the string data type to number using Number() method
+
+//2. Number() returns a floating point or an integer by trying to convert the entire value of input. parseInt() convert to integer without the number(s) after demical point if the number is a decimal number. parseFloat() convert to integer while preserving the demical point. parseInt() would be useful where a programmer wants the program to calculate an average and return only the number before the decimal point
+
+//3. .toUppercase() does not change the original string because strings are immutable. Rather it returns a new string
+let userName = "peter"; // let was used here because const will return a referrence error
+const capitalName = userName.toUpperCase();
+
+console.log(userName); //peter
+console.log(capitalName); //PETER
+
+//4. If the user is required to type a particular number of string as in the case of password to ensure it meets the minimum or essay response to ensure it doesn't exceed the maximum number of text
+
+//5. A real world scenario would be when asking users for price of an item using prompt
+
+//PART B: PREDICT THE OUTPUT
+//Snippet A: console.log(input + 8) //428                   console.log(converted + 8) //50
+//Snippet B: console.log(name.trim()) //chidinma            console.log(name.length) //8
+//Snippet C: console.log(word.toUpperCase()) //JAVASCRIPT   console.log(word) //javascript
+
+//PART C: DEBUGGING CHALLENGE
+//1. userAge variable needs to be converted into number first before using it
+let userAge = Number(prompt("Enter your age:"));
+let nextYearAge = userAge + 1;
+console.log("Next year, you will be " + nextYearAge);
+
+//2. The .toUpperCase string method uses a capital letter T instead of small letter t. The variable also didn't end with a semicolon.
+let city = "Lagos";
+console.log(city.toUpperCase());
+
+
+//PART 4: COLLABORATIVE TECHNICAL CHALLENGE
+let firstName = prompt("Enter your first name: ")
+let favoriteNumber = Number(prompt("Enter your favorite number: "));
+
+let lowerCaseName = firstName.toLowerCase().trim();
+console.log(`Your username is ${lowerCaseName}${favoriteNumber}`);
+
+//PART 5: EXTENSION CHALLENGE
+let firstName = prompt("Enter your first name: ")
+let favoriteNumber = Number(prompt("Enter your favorite number: "));
+
+let lowerCaseName = firstName.toLowerCase().trim();
+const username = (name) => {
+    if(name.length > 8){
+        return name.slice(0, 8);
+    
+    }
+    return name;
+}
+const result = username(lowerCaseName)
+console.log(`Your username is ${result}${favoriteNumber}`);
