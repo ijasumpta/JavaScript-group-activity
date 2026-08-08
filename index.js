@@ -144,3 +144,60 @@ const username = (name) => {
 }
 const result = username(lowerCaseName)
 console.log(`Your username is ${result}${favoriteNumber}`);
+
+
+
+
+//Activity 4: Text and Numbers 
+//1. Math.random() is used to generate a number btween 0 and 1 and could be used when developing a program that needs to make a random choice like a ludo game or rock, paper and scissors game
+//2. To check if a text contains a certain character, I will use the .includes() method.
+//3. .slice() slice out a part of the array or string using start and stop index and return a new value. The stop index is excluded. The .split() method split the string or array at a particular character or symbol provided as argument
+
+//PART B:PREDICT THE OUTPUT
+//Snippet A: 
+console.log(Math.roud(4.5)) //5   
+console.log(Math.floor(4.9)) //4    
+console.log(Math.ceil(4.1)) //5
+
+//Snippet B: 
+let phrase = "I love JavaScript";
+console.log(phrase.includes("love")) //true
+console.log(phrase(split(" "))); // ["I", "love", "JavaScript"]
+
+//Snippet C
+let num = 7;
+console.log(Math.max(num, 10, 3)); //10
+console.log(Math.min(num, 10, 3)) //3
+
+//PART 3: DEBUGGING CHALLENGE
+let score = 87.6;
+let rounded = Math.round(score); //round was originally capitalized in the first letter
+console.log("Rounded score: " + rounded); //the plus symbol was originally missing
+
+let sentence = "Learning code is fun";
+let firstWord = sentence.split(" ")[0];
+console.log(firstWord); //"firstWord" was originally "firstword" with small letter "w"
+
+
+//PART 4: COLLABORATIVE TECHNICAL CHALLENGE
+//Build a "Grade Rounder and Reporter"
+let studentName = prompt("Kindly enter your name pls: ");
+let score = Math.round(prompt("Kindly enter your exact score: "));
+studentName = studentName.toUpperCase()
+
+console.log("========== GRADE REPORT =========")
+console.log(`NAME: ${studentName}\nROUNDED SCORE: ${score}`)
+
+//PART 5: EXTENSION CHALLENGE
+// Add Math.random() to simulate a "bonus point" between 0 and 5 that gets added to the score before rounding. Discuss how you'd make sure the random bonus is always a whole number.
+let studentName = prompt("Kindly enter your name pls: ");
+studentName = studentName.toUpperCase();
+
+let score = prompt("Kindly enter your exact score: ");
+let bonusPoint = Math.round(Math.random() * 5);
+let totalScore = score + bonusPoint;
+totalScore = Math.round(totalScore)
+
+console.log("========== GRADE REPORT =========");
+console.log(`You've been given a bonus point of ${bonusPoint} `)
+console.log(`NAME: ${studentName}\nROUNDED SCORE PLUS BONUS: ${totalScore}`)
