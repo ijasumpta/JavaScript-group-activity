@@ -201,3 +201,100 @@ totalScore = Math.round(totalScore)
 console.log("========== GRADE REPORT =========");
 console.log(`You've been given a bonus point of ${bonusPoint} `)
 console.log(`NAME: ${studentName}\nROUNDED SCORE PLUS BONUS: ${totalScore}`)
+
+
+//ACTIVITY 5: DECISION MAKERS
+//Part 1: Group Discussion
+//1. It means a program deciding the course of action when options are available like deciding what to display to a user based on their time zone or preference
+//2. = is assignment opeartor. == is lose equal to operator while === is the strict equality sign in JS. If a program needs to compare both value and type, using the lose equality may cause a bug.
+//3. Only one block will run because you're essentially saying if this does not happen, then this should happen and if by any chance any of then didn't happen, this do this as last option. It's like my wife sending me to the superstore and saying: Dear, buy a bag of organic sweet potatos. If that is not available, then buy inorganic sweet potato provided it's not GMO. If that is not available also then just buy any potato that is available.
+//4. && help the program to know what conditions must all be met before an action is taken. || help the program to know that the all conditions does not not to be met. if it is raining and you have an umbrella, you can come out with your laptop and phone in your hand. If it's shining or cloudy,  you can come out with your laptop and phone in your hand.
+
+//Part 2: Predict the Output
+//Snippet A
+let temperature = 15;
+if(temperature > 30){
+    console.log("It's hot");
+}else if(temperature > 15){
+    console.log("It's warm");
+}else{
+    console.log("It's cool");
+} // It's cool!
+
+//Snippet B
+let age = 20;
+let hasID = false;
+if(age >= 18 && hasID){
+    console.log("You may enter")
+}else{
+    console.log("Entry denied");
+} //Entry denied
+
+//Snippet C
+let password = "1234";
+if(password === "0000"){
+    console.log("Password changed!");
+}else{
+    console.log("No change.");
+} // No change.
+
+//Part 3: Debugging Challenge
+let hour = 14;
+if(hour < 12){
+    console.log("Good morning");
+}else if(hour < 18){
+    console.log("Good afternoon");
+}else{
+    console.log("Good evening");
+} // originally, the first if statement was missing a closing curly brace.
+
+//Part 4: Collaborative Technical Challenge
+// Scenario: Build a "Movie Ticket Pricer" that asks for a person's age and whether it's a weekday or weekend, then decides the ticket price using conditional logic (e.g., discounts for children, seniors, or weekday showings). 
+let age = Number(prompt("Enter your age"));
+let week = prompt("Is it weekday: Yes/No");
+week = week.toUpperCase();
+
+const movieTicketPricer = (age, week) =>{
+    if(age <= 12 && week === "NO" ){
+        console.log("You have a discount applied");
+    } else if(age <= 12 && week === "YES"){
+        console.log("There's no discount for you");
+    } else if (age >= 70 && week === "NO"){
+        console.log("You have discount applied to your ticket");
+    } else if (age >= 70 && week === "YES"){
+        console.log("Sorry sir, no discount for you today");
+    } else{
+        console.log("Regular charges applied");
+    }
+}
+const result = movieTicketPricer(age, week);
+console.log(result);
+
+//Activity 6: Shortcuts and Choices 
+//1. It means I can write if/else statement in a single line
+//2. Ternary operator cannot replace an If/elseif/else with three branches because it can only handle two branches. It is also not as readable as the if/else statement
+//3. Ternary operator make code harder to read when there are multiple conditions to check. It is also not as readable as the if/else statement. I would stick with regular if/else when there are multiple conditions to check. I would use ternary operator when there are only two conditions to check and the code is simple enough to be written in a single line.
+
+//Part 2: Predict the Output
+//Snippet A
+let score = 72;
+let result = score >= 50 ? "Pass" : "Fail";
+console.log(result); // Pass
+
+//Snippet B
+let cartTotal = 0;
+let message = cartTotal > 0 ? "Proceed to checkout" : "Your cart is empty";
+console.log(message); // Your cart is empty
+
+//Snippet C
+let stock =5;
+console.log(`Stock status: ${stock > 0 ? "Available" : "Out of stock"}`); // Stock status: Available
+
+//Part 3: Debugging Challenge
+let temperature = 28;
+let feeling = temperature > 25 ? "hot" : "cold"; 
+console.log(feeling); //originally, colon was missing after "hot"
+
+let isMember = true;
+let discount = isMember ? 10 : 0;
+console.log(`Discount: ${discount}%`); //originally, back second tick was missing after the percentage sign
