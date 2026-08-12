@@ -6,7 +6,7 @@ let favoriteNumber = Number(prompt("Enter your favorite number: "));
 let lowerCaseName = firstName.toLowerCase().trim();
 const username = (name) => {
     if(name.length > 8){
-        return name.slice(0, 8);
+    return name.slice(0, 8);
     
     }
     return name;

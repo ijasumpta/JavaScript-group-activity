@@ -1,5 +1,5 @@
 
- // ************** Part  4  ******************
+ // ************** Part 4: Collaborative Technical Challenge  ******************
 
  // Step 1. The final output Is going to print out the person firstname to lowercase and the favourite number
  // Step 2 The persons first name and the persons favorite number

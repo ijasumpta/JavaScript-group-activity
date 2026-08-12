@@ -1,4 +1,4 @@
-// ******** Part 3: *********
+// ******** Part 3:Debugging Challenge *********
 // 1 
 /*
  let firstName = "Tunde";

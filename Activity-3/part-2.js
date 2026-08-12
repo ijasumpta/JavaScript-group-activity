@@ -1,4 +1,5 @@
-// Part 2
+// Part 2: Predict the Output
+
 // Snippet A
 let input = "42";
 let converted = Number(input);

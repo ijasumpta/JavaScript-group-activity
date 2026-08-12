@@ -1,4 +1,6 @@
-///****** Part 2  Snippet A ********
+//****** Part 2: Predict the Output ********
+ 
+ //Snippet A 
    let a = 10;
    let b = "5";
    console.log(a + b); // will output 105 

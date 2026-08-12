@@ -9,7 +9,7 @@ let totalScore = numericScore + bonusPoint;
 totalScore = Math.round(totalScore);
 let capitalisedName = studentName.toUpperCase().trim();
 
-console.log(`Hello ${capitalisedName} your total score is: ${totalScore}`); // will output Hello IJEOMA your total score is: 93
+console.log(`Hello ${capitalisedName}, Your total score plus bonus is: ${totalScore}`); 
 
 
 

@@ -1,5 +1,6 @@
 
-// ********* part 3 No.1 ****************8
+// ********* Part 3: Debugging Challenge ****************
+// No.1 
 
  let userAge = prompt("Enter your age:");
  let nextYearAge = userAge + 1;

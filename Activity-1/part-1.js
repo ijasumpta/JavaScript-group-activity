@@ -21,6 +21,6 @@ Programmers chooses const because  they want the value of a variable to remain t
 
 4. Programming language need different data types because JavaScript understands each data in a different ways it helps them differentiate between a text (string), numbers and boolean values so it can process each of the data correctly
 
-5. 
+5. It may cause consistency problem
 
 */

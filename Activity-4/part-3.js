@@ -8,9 +8,15 @@
 // corrected version
 let score = 87.6;
 let rounded = Math.round(score);
-console.log("Rounded score: " + rounded); // will outputwill output Rounded score: 88
+console.log("Rounded score: " + rounded); // will output Rounded score: 88
 
 // (ii)
+// let sentence = "Learning to code is fun"
+// let firstWord = sentence.split(" ") [0]  
+// console.log(firstword);  // firstword in the console is not written in camel case as originally declared
+
+// Corrected version
+
 let sentence = "Learning to code is fun"
-let firstWord = sentence.split(" ") [0]  // will output Learning no error
+let firstWord = sentence.split(" ") [0]  // will output Learning 
 console.log(firstWord);
