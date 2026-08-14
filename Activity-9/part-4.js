@@ -30,7 +30,7 @@ we are using one arrow function for each senerio
 {
   // Calculator for percentage: it returns a decimal value of a percentage
   const calPercentage = (num) => num / 100;
-  console.log(calPercentage(25));
+  console.log(calPercentage(25));  
 
 
  // Calculator to find the area of rectangle
@@ -44,3 +44,10 @@ we are using one arrow function for each senerio
  console.log(`100 degree Celsius = ${celsiusToFahrenheit (100).toFixed(1)} Fahrenheit.`);
 
 }
+
+/*Step 7 Output
+0.25
+36
+100 degree Celsius = 212.0 Fahrenheit.
+
+*/

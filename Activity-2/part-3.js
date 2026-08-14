@@ -10,4 +10,4 @@
    let firstName = "Tunde";
    let lastName = "Okafor";
    let fullName = firstName + " " + lastName; 
-   console.log("Welcome, " + fullName + "!"); // Welcome, Tunde Okafor !
+   console.log("Welcome, " + fullName + "!"); // Welcome, Tunde Okafor!

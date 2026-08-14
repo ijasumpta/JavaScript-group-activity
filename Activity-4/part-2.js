@@ -11,8 +11,8 @@ console.log(phrase.includes("love")); // will output true
 console.log(phrase.split(" ")); // will output [ 'I', 'love', 'JavaScript' ]
 
 // C
- let num = 7;
- console.log(Math.max(num, 10, 3)); //will output 10
- console.log(Math.min(num, 10, 3));  //will output 3
+let num = 7;
+console.log(Math.max(num, 10, 3)); //will output 10
+console.log(Math.min(num, 10, 3));  //will output 3
  
 

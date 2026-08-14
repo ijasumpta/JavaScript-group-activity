@@ -1,10 +1,12 @@
 
 //******* PART 3: DEBUGGING CHALLENGE ********
 
-let userName ="Amara"
-console.log(username); 
-// The code will not run because the variable name in the console is not declared
+/*
+ let userName ="Amara"
+ console.log(username); 
+ The code will not run because the variable name in the console is not declared
 
+*/
 // Corrected version
    let userName ="Amara";
    console.log(userName);  //  Amara

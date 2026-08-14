@@ -15,4 +15,4 @@ console.log(message);  // will output   Your cart is empty
 // Snippet C
 
 let stock = 5;
-console.log(`Stock status: ${stock > 0 ? "Available" : "Out of stock" }`);  // Stock status Available
+console.log(`Stock status: ${stock > 0 ? "Available" : "Out of stock" }`);  // Stock status: Available

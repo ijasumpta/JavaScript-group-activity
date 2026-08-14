@@ -6,29 +6,22 @@ For Children (0 - 13 years), all booking for weekend and weekdays would be given
 For Seniors (>=65) all bookings on weekdays will have a discount of 15% but no discount for weekends 
 For others will pay the standard ticket fee
 
-Step 2:
-
-user age
-weekday
-  
+Step 2 —
+user age and weekday
 
 Step 3 — 
 if the booking happens on weekday or not 
 
 Step 4 —
-     
 it should display age, day and ticket price
 
 Step 5 —
 
-if the user is a child (0 - 13), reduce ticket price to 500 naira and apply discount of 15%
-if on a weekday.
+if the user is a child (0 - 13), reduce ticket price to 500 naira and apply discount of 15% if on a weekday.
 But if the user is a senior(65 yeras and above), reduce ticket price 600 naira and also apply 15% discount if on a weekday
 However if user does not meet the above age condition let user pay the standard price of 1000 naira, only apply 15% discount if this user books on a weekday.
 
-
 */
-
 
 // Step 6 — 
 
@@ -55,6 +48,36 @@ Day: ${day}
 Ticket Price: ₦${ticketPrice}
 ============================
 `);
+
+/* Step 7 Result
+
+======= MOVIE TICKET =======
+Age: 8
+Day: weekday
+Ticket Price: ₦425
+============================
+
+
+======= MOVIE TICKET =======
+Age: 70
+Day: weekend
+Ticket Price: ₦600
+============================
+
+
+======= MOVIE TICKET =======
+Age: 30
+Day: weekend
+Ticket Price: ₦1000
+============================
+
+
+======= MOVIE TICKET =======
+Age: 17
+Day: weekday
+Ticket Price: ₦850
+============================
+*/
 
 
 

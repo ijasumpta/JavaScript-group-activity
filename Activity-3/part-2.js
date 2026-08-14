@@ -9,7 +9,7 @@ console.log(converted + 8); // will output 50
 //  B
 let name = "   Chidinma  ";
 console.log(name.trim());  // will output Chidinma without the spaces
-console.log(name.length()); // will output 13 
+console.log(name.length); // will output 13 
 
 // C
 let word = "javascript";
