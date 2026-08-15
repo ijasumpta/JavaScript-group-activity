@@ -59,7 +59,7 @@ function totalCost() {
 
 totalCost();
 
-/* Step 7
+/* Step 7 Output
 ======Customers Receipt======
 Item purchased: BACKPACK
 Quantity purchased: 2
